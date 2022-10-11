@@ -13,6 +13,7 @@
 
   $panelMenu.addEventListener("click", (e) => {
     if (e.target.matches(".header-panel-menu a")) {
+      e.preventDefault();
       $panelBtn.firstElementChild.classList.remove("none");
       $panelBtn.lastElementChild.classList.add("none");
       $panel.classList.remove("is-active");
